@@ -1,0 +1,8 @@
+@import "./blocks/header.scss",
+"global";
+body {
+    color: yellow;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
