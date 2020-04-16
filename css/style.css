@@ -1,14 +1,138 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .head {
+  margin: 0 auto 0 auto;
+  margin-top: 0;
+  background-color: #f0f5fb;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
+  justify-content: space-between;
 }
 
 .menu {
   display: flex;
+  margin: 60px 0px 1px -20px;
+}
+.menu__item {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.clock {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.phone {
+  margin: 58px 20px 0px 80px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+}
+
+.phone::before {
+  left: -50px;
+  bottom: -25px;
+  content: url(../images/phone.png);
+  display: flex;
+  position: absolute;
+}
+
+.pizza {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 60px;
+}
+
+.popup-payment {
+  height: 500px;
+  position: absolute;
+  max-width: 500px;
+  background-color: #668993;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.popup-payment__btn {
+  margin: 0 auto;
+  width: 50%;
+  border: none;
+  padding: 10px;
+  background-color: #2c2c8c;
+  border-radius: 10px;
+  color: white;
+}
+
+.popup-contacts {
+  height: 500px;
+  position: absolute;
+  max-width: 500px;
+  background-color: #668993;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.popup-contacts__btn {
+  margin: 0 auto;
+  width: 50%;
+  border: none;
+  padding: 10px;
+  background-color: #2c2c8c;
+  border-radius: 10px;
+  color: white;
+}
+
+.contacts-none {
+  display: none;
 }
 
 .main {
   max-width: 1440px;
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
 li {

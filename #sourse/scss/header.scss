@@ -1,11 +1,118 @@
 .head {
+    margin: 0 auto 0 auto;
+    margin-top: 0;
+    background-color: #f0f5fb;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu {
     display: flex;
+    margin: 60px 0px 1px -20px;
+    &__item {
+        margin-left: 50px;
+        cursor: pointer;
+    }
 }
 
 .logo {}
 
+.clock {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.phone {
+    margin: 58px 20px 0px 80px;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+}
+
+.phone::before {
+    left: -50px;
+    bottom: -25px;
+    content: url(../images/phone.png);
+    display: flex;
+    position: absolute;
+}
+
 .nav {}
+
+.pizza {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+}
+
+.popup-payment {
+    height: 500px;
+    position: absolute;
+    max-width: 500px;
+    background-color: rgb(102, 137, 147);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    &__title {}
+    &__text {}
+    &__btn {
+        margin: 0 auto;
+        width: 50%;
+        border: none;
+        padding: 10px;
+        background-color: rgb(44, 44, 140);
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+.payment-none {
+    // display: none;
+}
+
+.popup-contacts {
+    height: 500px;
+    position: absolute;
+    max-width: 500px;
+    background-color: rgb(102, 137, 147);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    &__title {}
+    &__text {}
+    &__btn {
+        margin: 0 auto;
+        width: 50%;
+        border: none;
+        padding: 10px;
+        background-color: rgb(44, 44, 140);
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+.contacts-none {
+    display: none;
+}

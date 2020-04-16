@@ -12,17 +12,40 @@
 
 <body class="main">
     <header class="head">
-        <ul class="menu">
-            <li>Payment</li>
-            <li>About us</li>
-            <li>Contacts</li>
-        </ul>
-        <img class="logo" src="./images/logo.svg" alt="логотип">
-        <div class="nav">
-            <a href="#">Daily 11am - 9pm</a>
-            <a href="tel:+79451671616">+79451671616</a>
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__item">Payment</li>
+                <li class="menu__item">About us</li>
+                <li class="menu__item">Contacts</li>
+            </ul>
+            <img class="logo" src="./images/logo.svg" alt="логотип">
+            <div class="nav">
+                <a class="clock" href="#">Daily 11am - 9pm</a>
+                <a class="phone" href="tel:+79451671616">7 945 167 16 16</a>
+            </div>
+        </div>
+        <div class="vegitable">
+            <img class="pizza" src="./images/pizza.png" alt="" width="500px">
+        </div>
+        <div class="popup-payment payment-none">
+            <h2 class="popup-payment__title">Правила оплаты</h2>
+            <p class="popup-payment__text">
+                ОПЛАТА С ПОМОЩЬЮ БАНКОВСКОЙ КАРТЫ Для выбора оплаты товара с помощью банковской карты на соответствующей странице сайта необходимо нажать кнопку «Оплата банковской картой». Оплата происходит через авторизационный сервер Процессингового центра Банка с
+                использованием Банковских кредитных карт следующих платежных систем: VISA International MasterCard World Wide Описание процесса передачи данных Для оплаты покупки Вы будете перенаправлены на платежный шлюз ПАО «Сбербанк России» для ввода
+                реквизитов Вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.
+            </p>
+            <button class="popup-payment__btn">Закрыть</button>
+        </div>
+        <div class="popup-About"></div>
+        <div class="popup-contacts contacts-none">
+            <h2 class="popup-contacts__title">Наш ресторан:</h2>
+            <p class="popup-contacts__text">Адрес: 190005, г. Санкт-Петербург, ул. 2-я Красноармейская, д. 3. Часы работы: с 11.00 до 23.00</p>
+            <h2 class="popup-contacts__title">Службы доставки:</h2>
+            <p class="popup-contacts__text">Адрес: 195299, г. Санкт-Петербург, пр. Просвещения, д. 99. Адрес: 197227, г. Санкт-Петербург, пр. Испытателей, д. 30.</p>
+            <button class="popup-contacts__btn">Закрыть</button>
         </div>
     </header>
+
 </body>
 
 </html>
