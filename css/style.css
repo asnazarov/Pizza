@@ -69,66 +69,77 @@ li {
   position: absolute;
 }
 
+.vegitable__title {
+  margin-top: 50px;
+  text-align: center;
+}
+.vegitable__text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
 .pizza {
   margin: 0 auto;
   display: flex;
   margin-top: 60px;
 }
 
-.popup-payment {
+.popup-info {
   height: 500px;
   position: absolute;
   max-width: 500px;
-  background-color: #668993;
+  background-color: rgba(66, 140, 81, 0.678);
   border-radius: 20px;
   padding: 30px;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-}
-.popup-payment__btn {
-  margin: 0 auto;
-  width: 50%;
-  border: none;
-  padding: 10px;
-  background-color: #2c2c8c;
-  border-radius: 10px;
-  color: white;
-}
-
-.popup-contacts {
-  height: 500px;
-  position: absolute;
-  max-width: 500px;
-  background-color: #668993;
-  border-radius: 20px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-}
-.popup-contacts__btn {
-  margin: 0 auto;
-  width: 50%;
-  border: none;
-  padding: 10px;
-  background-color: #2c2c8c;
-  border-radius: 10px;
-  color: white;
-}
-
-.contacts-none {
   display: none;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: showBlock 0.5s linear forwards;
+}
+.popup-info__title {
+  text-align: center;
+}
+.popup-info__btn {
+  border: none;
+  padding: 10px 40px;
+  background-color: #2c2c8c;
+  border-radius: 10px;
+  color: white;
 }
 
+.popup-active {
+  display: block;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.products {
+  max-width: 1200px;
+}
+.cards {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 40px;
+  max-width: 260px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main {
   max-width: 1440px;
   margin: 0 auto;
