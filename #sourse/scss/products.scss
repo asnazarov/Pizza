@@ -3,6 +3,29 @@
     &__title {}
 }
 
+.basket {
+    display: flex;
+    justify-content: flex-end;
+    &__price {
+        margin: 0;
+    }
+    &__bg {
+        margin: 0 10px;
+        width: 40px;
+        height: 50px;
+        background-image: url(../images/корзина.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__count {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        // align-items: flex-end;
+    }
+}
+
 .cards {
     margin: 0 auto;
     display: flex;
@@ -13,11 +36,18 @@
 .card {
     margin: 40px;
     max-width: 260px;
-    border: 1px solid red;
+    border: 3px solid rgb(186, 186, 186);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__img {}
+    &__img {
+        width: 220px;
+    }
     &__title {}
     &__text {}
+    &__buy {
+        cursor: pointer;
+        width: 35px;
+    }
 }

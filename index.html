@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="icon" type="images/png" href="./images/favicon.png">
 </head>
 
 <body class="main">
@@ -17,7 +17,7 @@
                 <li class="menu__item menu-click">Payment</li>
                 <div class="popup-info">
                     <h2 class="title">Правила оплаты</h2>
-                    <p class="popup-info__text">
+                    <p>
                         ОПЛАТА С ПОМОЩЬЮ БАНКОВСКОЙ КАРТЫ Для выбора оплаты товара с помощью банковской карты на соответствующей странице сайта необходимо нажать кнопку «Оплата банковской картой». Оплата происходит через авторизационный сервер Процессингового центра Банка с
                         использованием Банковских кредитных карт следующих платежных систем: VISA International MasterCard World Wide Описание процесса передачи данных Для оплаты покупки Вы будете перенаправлены на платежный шлюз ПАО «Сбербанк России»
                         для ввода реквизитов Вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.
@@ -54,15 +54,32 @@
         </div>
     </header>
     <section class="products">
+        <template id="task-basket">
+             <div class="basket">
+            <p class="basket__price"> = 00 руб</p>
+            <div class="basket__bg"></div>
+            <p class="basket__count">0</p>
+        </div>
+        </template>
+        <!-- <div class="basket">
+            <p class="basket__price"> = 00 руб</p>
+            <div class="basket__bg"></div>
+            <p class="basket__count">0</p>
+        </div> -->
         <h2 class="products__title">Popular dishes</h2>
 
         <div class="cards">
-            <div class="card">
-                <img src="./images/imgCards/image 26.jpg" alt="">
-                <h3 class="card__title">Quattro formaggi</h3>
-                <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-            </div>
+
         </div>
+        <template id="task-card">
+            <div class="card">
+                <img class="card__img">
+                <h3 class="card__title"></h3>
+                <p class="card__text">D</p>
+                <p class="card__price"></p>
+                <img class="card__buy" src="./images/basket.jpg" width="30px" alt="">
+            </div>
+        </template>
     </section>
     <script src="./js/main.js"></script>
 </body>

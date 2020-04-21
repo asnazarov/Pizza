@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   margin: 0;
@@ -89,7 +90,7 @@ li {
   height: 500px;
   position: absolute;
   max-width: 500px;
-  background-color: rgba(66, 140, 81, 0.678);
+  background-color: rgba(182, 187, 183, 0.678);
   border-radius: 20px;
   padding: 30px;
   display: none;
@@ -125,6 +126,28 @@ li {
 .products {
   max-width: 1200px;
 }
+.basket {
+  display: flex;
+  justify-content: flex-end;
+}
+.basket__price {
+  margin: 0;
+}
+.basket__bg {
+  margin: 0 10px;
+  width: 40px;
+  height: 50px;
+  background-image: url(../images/корзина.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.basket__count {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cards {
   margin: 0 auto;
   display: flex;
@@ -135,11 +158,20 @@ li {
 .card {
   margin: 40px;
   max-width: 260px;
-  border: 1px solid red;
+  border: 3px solid #bababa;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.card__img {
+  width: 220px;
+}
+.card__buy {
+  cursor: pointer;
+  width: 35px;
+}
+
 .main {
   max-width: 1440px;
   margin: 0 auto;
