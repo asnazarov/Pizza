@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="icon" type="images/png" href="./images/favicon.png">
 </head>
 
@@ -61,11 +62,11 @@
             <p class="basket__count">0</p>
         </div>
         </template>
-        <!-- <div class="basket">
+        <div class="basket">
             <p class="basket__price"> = 00 руб</p>
             <div class="basket__bg"></div>
             <p class="basket__count">0</p>
-        </div> -->
+        </div>
         <h2 class="products__title">Popular dishes</h2>
 
         <div class="cards">
@@ -75,13 +76,45 @@
             <div class="card">
                 <img class="card__img">
                 <h3 class="card__title"></h3>
-                <p class="card__text">D</p>
+                <p class="card__text"></p>
                 <p class="card__price"></p>
                 <img class="card__buy" src="./images/basket.jpg" width="30px" alt="">
             </div>
         </template>
     </section>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="./images/slider/1.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/2.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/3.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/4.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/5.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/6.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/7.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/8.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/9.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/10.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/11.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/12.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/13.jpg" alt="">
+            <img class="swiper-slide" src="./images/slider/14.jpg" alt="">
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

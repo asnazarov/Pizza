@@ -23,13 +23,13 @@ const productInfo = [{
         imgUrl: '../images/imgCards/image 28.jpg',
         title: 'Кватро формаджіо',
         text: 'Dough, Mozzarella, Cheddar, Blue, Parmesan',
-        price: '200'
+        price: '250'
     },
     {
         imgUrl: '../images/imgCards/image 29.jpg',
         title: 'Філадельфія селмон',
         text: 'Dough, mozzarella, barrel, eggs, Parmesan cheese',
-        price: '300'
+        price: '199'
     },
     {
         imgUrl: '../images/imgCards/image 28.jpg',
@@ -53,7 +53,7 @@ const productInfo = [{
         imgUrl: '../images/imgCards/image 28.jpg',
         title: 'Карбонара',
         text: 'Dough, Mozzarella, Cheddar, Blue, Parmesan',
-        price: '300'
+        price: '350'
     },
 
 ];
@@ -91,12 +91,11 @@ for (let i = 0; i < productInfo.length; i++) {
 
 document.querySelectorAll('.card').forEach(function(item) {
         item.addEventListener('click', function(event) {
-            let number = event.target.textContent
-            const Price = taskCard.querySelector('.card__price');
-            const addPrice = Price.textContent
-            const enent = event.target.Price
-            if (event.target.classList.contains('card__buy'))
-                console.log(event.target.addPrice);
+            let textCardPrice = item.querySelector('.card__price');
+            let numCardPrice = Number(textCardPrice.textContent)
+            if (event.target.classList.contains('card__buy')) {
+                console.log(numCardPrice);
+            }
         });
     })
     // function addProduct(event) {
