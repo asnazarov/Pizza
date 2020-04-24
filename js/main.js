@@ -89,13 +89,21 @@ for (let i = 0; i < productInfo.length; i++) {
         // console.log(cardCopy)
 }
 
+const basketPrice = document.querySelector('.basket__price');
 document.querySelectorAll('.card').forEach(function(item) {
         item.addEventListener('click', function(event) {
             let textCardPrice = item.querySelector('.card__price');
             let numCardPrice = Number(textCardPrice.textContent)
             if (event.target.classList.contains('card__buy')) {
                 console.log(numCardPrice);
+
             }
+            let numBasket = Number(basketPrice.textContent);
+            document.querySelectorAll('.card__price').forEach(function(item, index, array) {
+                // console.log(item.textContent, index);
+                numBasket += Number(item.textContent);
+                console.log(numBasket)
+            })
         });
     })
     // function addProduct(event) {

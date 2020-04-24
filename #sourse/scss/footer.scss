@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f5fb;
+    margin-bottom: 100px;
+    &__title {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
+    }
+    &__form {}
+    &__input {
+        padding: 20px 30px;
+        margin-right: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+    &__btn {
+        padding: 20px 70px;
+        margin-left: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+}

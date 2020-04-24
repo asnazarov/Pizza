@@ -6,7 +6,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    // max-width: 1200px;
     display: flex;
     justify-content: space-between;
 }
@@ -53,6 +53,10 @@
     &__title {
         margin-top: 50px;
         text-align: center;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
     }
     &__text {
         text-align: center;

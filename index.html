@@ -55,15 +55,9 @@
         </div>
     </header>
     <section class="products">
-        <template id="task-basket">
-             <div class="basket">
-            <p class="basket__price"> = 00 руб</p>
-            <div class="basket__bg"></div>
-            <p class="basket__count">0</p>
-        </div>
-        </template>
+
         <div class="basket">
-            <p class="basket__price"> = 00 руб</p>
+            <p class="basket__price">0</p>
             <div class="basket__bg"></div>
             <p class="basket__count">0</p>
         </div>
@@ -82,8 +76,7 @@
             </div>
         </template>
     </section>
-
-    <div class="swiper-container">
+    <section class="swiper-container">
         <div class="swiper-wrapper">
             <img class="swiper-slide" src="./images/slider/1.jpg" alt="">
             <img class="swiper-slide" src="./images/slider/2.jpg" alt="">
@@ -100,15 +93,23 @@
             <img class="swiper-slide" src="./images/slider/13.jpg" alt="">
             <img class="swiper-slide" src="./images/slider/14.jpg" alt="">
         </div>
-        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-    </div>
+    </section>
+    <footer class="footer">
+        <h2 class="footer__title">Fill out the form and we will call you</h2>
+        <form class="footer__form" action="">
+            <input class="footer__input" type="text" placeholder="Your name">
+            <input class="footer__input" type="text" placeholder="Phone number">
+            <button class="footer__btn">Call back</button>
+        </form>
+        <img src="./images/car.jpg" alt="">
+    </footer>
     <script src="./js/main.js"></script>
     <script src="./js/swiper.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 6,
-            spaceBetween: 30,
+            spaceBetween: 10,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
